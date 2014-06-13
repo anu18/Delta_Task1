@@ -1,0 +1,22 @@
+#tex-ed
+{
+position: fixed;
+top: 20px;
+left: 300px;
+
+}
+
+#mytext
+{
+width: 400px;
+height: 300px;
+resize: both;
+overflow: auto;
+
+}
+
+h2
+{
+text-align: center;
+}
+
