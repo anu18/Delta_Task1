@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+
+<html>
+<link rel="stylesheet" type="text/css" href="texteditor.css" />
+<script src="texteditor.js"> </script>
+<head> <title> Text Editor </title> </head>
+
+<body>
+<div id="tex-ed">
+<h2> My Text Editor </h2>
+<form>
+<input type="button" value="BOLD" onclick="change('[b]','[/b]')"> </input>
+<input type="button" value="UNDERLINE" onclick="change('[u]','[/u]')"> </input>
+<input type="button" value="ITALICS" onclick="change('[i]','[/i]')"> </input>
+<input type="button" value="PARAGRAPH" onclick="change('[p]','[/p]')"> </input> 
+<input type="button" value="DOLD" onclick="dold()">
+<input type="button" value="DITALICS" onclick="ditalics()"> <br /> <br />
+
+Font Colour:
+<select id="col" onchange="change('[color=' + this.options[this.selectedIndex].value + ']', '[/color]')">
+<option selected="selected" >Default </option>
+<option value="red" style="color:red" >Red </option>
+<option value="blue" style="color:blue">Blue </option>
+<option value="green" style="color:green">Green </option>
+<option value="yellow" style="color:yellow">Yellow </option>
+<option value="black" style="color:"black">Black </option>
+<option value="orange" style="color:orange">Orange </option>
+</select> <br />
+</form> <br />
+
+<textarea id="mytext" placeholder="type..."></textarea> <br />
+<form>
+
+<input type="button" value="show text" onclick="view_text()"> </input>
+</form>
+<div id="viewtext"></div>
+</div>
+
+
+</body>
+</html>
